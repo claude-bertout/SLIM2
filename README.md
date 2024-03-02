@@ -18,9 +18,8 @@ and optimized for solving the problem of line formation for the 3-line blend aro
 Plotting routines are restricted to that case. They are included in the project so that prospective users will be 
 able to reproduce easily the A&A publication figures and make sure the code is working properly.
 
-A more general version of the code, able to compute many interacting and non-interacting lines simultaneously
-and allowing for variable temperature in the envelope, is currently being tested with the aim to utimately solve
-the multi level problem.
+A more general version of the code, able to compute a number of interacting and non-interacting lines simultaneously
+and allowing for variable temperature in the envelope, will be made available at a later date.
 
 Disclaimer. There is no guarantee whatsoever that this code is bugfree or that the theory underlying it is correct. 
 Users do so at their own risk and cannot hold the author responsible for any disagreement that would possibly result 
