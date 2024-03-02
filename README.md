@@ -37,7 +37,6 @@ The program requires the following python packages
 - matplotlib
 - argparse
 - configparser
-- collections
 
 Code structure
 
