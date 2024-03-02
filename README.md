@@ -14,7 +14,7 @@ array broadcasting. Please refer to A&A publication Bertout 2024 for the theoret
 equations implemented here and read below for a description of the implementation.
 
 Caveat: This is a research code and thus in constant flux. Version 1.0 presented here is stable, reasonably robust,
-and optimized for solving the problem of the formation of the 3-line blend around 3969 Angstrom in TTS spectra. 
+and optimized for solving the problem of line formation for the 3-line blend around 3969 Angstrom in TTS spectra. 
 Plotting routines are restricted to that case. They are included in the project so that prospective users will be 
 able to reproduce easily the A&A publication figures and make sure the code is working properly.
 
@@ -26,7 +26,7 @@ Disclaimer. There is no guarantee whatsoever that this code is bugfree or that t
 Users do so at their own risk and cannot hold the author responsible for any disagreement that would possibly result 
 from code errors or theory mistakes. Errare humanum est.
 
-This code is publicly available under the Creative Commons 4.0 BY-NC-SA license. 
+The code is publicly available under the Creative Commons 4.0 BY-NC-SA license. 
 See the Creative Commons site for details.
 
 Dependencies
@@ -60,7 +60,8 @@ defined. The meaning of each of these parameters is explained in the .conf file 
 -- "import_line_data.py" reads the line data from "import_atomic_data.py" and computes and stores as arrays the line 
 optical depths using "LTE_module.py". It also computes the absorption line profiles, defines the line interaction 
 matrices, and sets up the overall frequency grid for the flux integration. Databases for partition functions and 
-abundances are stored in directory "input_data".
+abundances must be stored in a directory named "input_data" containing the following files: abundances.txt, atomic_data.txt,
+Bolton_partition_functions.txt, Gray_partition_functions.txt, partition_function_data.txt.
 
 >>> Second step: number crunching
 
@@ -91,6 +92,6 @@ and the flux follows from integrating the emergent intensities.
 in a sub-directory of "results" (see above).
 
 -- Finally, "plot_library" contains plot functions for various quantities plotted when prm.graph_mode = True,
-as well as for plotting computations results.
+as well as for plotting computation results.
 	
 
