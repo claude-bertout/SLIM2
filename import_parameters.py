@@ -13,21 +13,6 @@ import parameter_parser as parse
 import constants as const
 from constants import G, M_sun, R_sun
 
-# files where results are stored
-# time_stamp = time.strftime('%d''-''%m''-''%Y''_''%H''%M''%S')
-"""file_location = ''
-if platform == "linux" or platform == "linux2":
-    file_location_base = "/results/"
-elif platform == "darwin":
-    file_location = "/Users/claude/Documents/GitHub/TTS_Fluorescence/"
-    file_location_base = file_location + "results/"
-#     file_location = file_location_base + time_stamp + "/"
-#     Path(file_location).mkdir(parents=True, exist_ok=True)
-elif platform == "win32" or platform == "win64":
-    file_location_base = "E:/Documents/GitHub/TTS_Fluorescence/results/"
-else:
-    print('Unkown computing platform. Exit code.')"""
-
 # all input parameters are defined in the computation_parameters.conf file
 # location of files (to be adapted according to computing platform format)
 file_location = parse.config['project_directory']
